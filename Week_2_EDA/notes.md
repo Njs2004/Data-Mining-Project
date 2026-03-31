@@ -1,5 +1,5 @@
 # Week 2 - Data Understanding & EDA
-Completed by: Patrick Bonna, Addison King
+Completed by: Patrick Bonna, Addison Amadi
 
 ## Tasks Completed
 - Generated histograms for Age, RestingBP, Cholesterol, and MaxHR
