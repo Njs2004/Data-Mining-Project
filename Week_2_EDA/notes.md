@@ -11,7 +11,7 @@ Completed by: Patrick Bonna, Addison Amadi
 - Normalized continuous variables using Min-Max normalization
 - Produced a clean feature matrix suitable for supervised learning
 
-<a href="https://hub.knime.com/s/UWrFxYl5YW8yI49c" target="_blank">View Workflow on KNIME Hub</a>
+<a href="https://hub.knime.com/s/UVzAXckfwXEPbTN4" target="_blank">View Workflow on KNIME Hub</a>
 - **CSV Reader** — Loads the heart disease dataset (heart.csv) into KNIME as a data table for processing
 - **Histogram (x4)** — Visualizes the distribution of Age, RestingBP, Cholesterol, and MaxHR to identify patterns, skewness, and anomalies
 - **Box Plot** — Displays the spread and outliers of continuous variables side by side to identify extreme values
