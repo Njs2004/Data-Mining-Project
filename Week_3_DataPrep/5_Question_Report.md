@@ -1,19 +1,55 @@
-Part 1 — Data Preparation (The "Cleaning")
+## Clinical Investigation 
 
-Imputation/Filtering: Decide on a strategy for the 172 Cholesterol = 0 patients. Will you impute the mean, use a regression to predict them, or flag them?
+Use **KNIME visualizations and statistics** (charts, histograms, box plots, etc.) to support your answers.
 
-Transformation: Prepare the final feature matrix. This includes handling any remaining inconsistencies and ensuring the target variable is correctly formatted for classification.
+---
 
-Part 2 — Clinical Investigation (The "Analysis")
+### 1️⃣ The Zero-Cholesterol Profile
+- Compare the **172 patients with Cholesterol = 0** vs others
+- Investigate:
+  - Disease prevalence
+  - Other health indicators
+- 💡 Key Question:
+  - What does a value of **0 cholesterol** likely represent clinically?
 
-Answer these 5 questions using KNIME evidence (charts/stats):
+---
 
-The Zero-Cholesterol Profile: Compare the 172 "Zero" patients against the rest. Are they sicker? What does the "0" likely mean clinically?
+### 2️⃣ The Cholesterol Paradox
+- Split patients into **quartiles based on cholesterol levels**
+- Analyze disease rates across quartiles
 
-The Cholesterol Paradox: Split patients into quartiles. Does higher cholesterol always equal higher disease risk in this specific dataset?
+- 💡 Key Question:
+  - Does higher cholesterol always correspond to higher disease risk in this dataset?
 
-The Outliers: Identify patients under 50 with "perfect" stats (normal BP/Cholesterol/No Diabetes) who still have disease. What other feature explains their diagnosis?
+---
 
-Asymptomatic (ASY) Deep-Dive: 79% of ASY patients have disease. What differentiates the 104 healthy ASY patients from the 392 sick ones?
+### 3️⃣ The Outliers
+- Identify patients:
+  - Under age 50
+  - Normal BP
+  - Normal cholesterol
+  - No diabetes
+  - Yet still diagnosed with heart disease
 
-Feature Engineering: Calculate the HR Reserve Ratio (MaxHR / (220 - Age)). Does this engineered feature correlate more strongly with disease than raw $MaxHR$?
+- 💡 Key Question:
+  - What **other feature(s)** explain their diagnosis?
+
+---
+
+### 4️⃣ Asymptomatic (ASY) Deep-Dive
+- Given:
+  - **79% of ASY patients have disease**
+- Compare:
+  - 104 healthy ASY patients
+  - 392 diseased ASY patients
+
+- 💡 Key Question:
+  - What differentiates healthy vs diseased individuals in this group?
+
+---
+
+### 5️⃣ Feature Engineering
+- Create a new feature:
+
+```math
+HR\ Reserve\ Ratio = \frac{MaxHR}{220 - Age}
