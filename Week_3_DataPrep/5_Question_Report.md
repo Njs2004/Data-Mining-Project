@@ -53,3 +53,6 @@ Use **KNIME visualizations and statistics** (charts, histograms, box plots, etc.
 
 ```math
 HR\ Reserve\ Ratio = \frac{MaxHR}{220 - Age}
+```
+<img width="450" height="450" alt="Screenshot 2026-04-05 at 11 13 19 PM" src="https://github.com/user-attachments/assets/b958ed50-9f8b-4cdf-979e-45e4587ecaee" />
+Workflow link: https://hub.knime.com/s/UWrFxYl5YW8yI49c
