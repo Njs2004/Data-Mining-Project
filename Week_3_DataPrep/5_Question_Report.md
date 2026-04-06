@@ -21,6 +21,12 @@ Use **KNIME visualizations and statistics** (charts, histograms, box plots, etc.
 - 💡 Key Question:
   - Does higher cholesterol always correspond to higher disease risk in this dataset?
 
+No, while Q4 (highest cholesterol, 276–603 mg/dL) has the highest disease rate at 57.3%, Q1 patients with the lowest cholesterol still have a 41.7% disease rate, meaning cholesterol alone is a weak and inconsistent predictor in this dataset. This is likely because many high-risk patients are already on statins suppressing their cholesterol levels, and stronger predictors like Oldpeak, ST_Slope, and ASY chest pain type are doing most of the predictive work.
+
+
+<img width="565" height="510" alt="image" src="https://github.com/user-attachments/assets/259acb8b-2337-44dd-b88a-0377c897a2fa" />
+
+
 ---
 
 ### 3️⃣ The Outliers
