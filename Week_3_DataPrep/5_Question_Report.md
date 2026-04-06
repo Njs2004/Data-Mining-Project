@@ -48,7 +48,7 @@ Use **KNIME visualizations and statistics** (charts, histograms, box plots, etc.
 
 ---
 
-### 5️⃣ Feature Engineering
+### 5️⃣ Feature Engineering (Addison)
 - Create a new feature:
 
 ```math
