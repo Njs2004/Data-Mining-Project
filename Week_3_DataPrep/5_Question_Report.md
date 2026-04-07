@@ -64,15 +64,23 @@ Workflow link: https://hub.knime.com/s/ioQksOKr8JcBcCpd
 
 **Analysis of the 392 Diseased vs. 104 Healthy ASY Patients:**
 
-While both groups are asymptomatic (reporting no chest pain), they are differentiated by **objective clinical markers** identified in the KNIME workflow:
+**Key Question:** What differentiates the 104 healthy ASY patients from the 392 sick ones?
 
-* **Metabolic Risk (FastingBS):** Based on the **Heatmap** node, diseased ASY patients show a higher correlation with elevated Fasting Blood Sugar (>120 mg/dl). Clinically, diabetes can cause neuropathy, which "masks" heart pain, leading to silent heart disease.
-* **Exercise Stress Indicators:** Evidence from the **Normalizer** and **Category to Number** nodes shows that the diseased group is characterized by an abnormal **ST_Slope** (Flat or Downsloping) and higher **Oldpeak** values. 
-* **Ischemic Distress:** Even without resting pain, the diseased ASY group is more likely to show **Exercise-Induced Angina**, proving their heart fails to oxygenate properly under stress.
+**Analysis & KNIME Evidence:**
 
-**Conclusion:** The differentiator is "Silent Ischemia"—physiological distress that only appears on EKGs or blood tests, not through patient-reported symptoms.
+Even though both groups are categorized as **Asymptomatic** (meaning they report no chest pain), the data shows they are clinically very different. Based on the **Heatmap** and **Normalizer** nodes in my workflow, the diseased group is differentiated by:
 
-![Heatmap Evidence - FastingBS vs HeartDisease](images/heatmap_asy.png)
+* **Fasting Blood Sugar (FastingBS):** My **Heatmap** shows that sick ASY patients are much more likely to have a value of **1** (high blood sugar). In contrast, the 104 healthy patients almost all have a **0**. This suggests that high blood sugar is a major "hidden" risk factor for this group.
+  
+* **ST_Slope & Oldpeak:** After processing the data through the **Category to Number** node, there is a clear trend: the 392 sick patients typically have a **Flat** or **Downsloping ST_Slope**, while the healthy patients have an **Upsloping** one.
+* **Exercise Angina:** Many of the sick patients show a **"Y"** for **ExerciseAngina**. This means that even if they feel fine at rest, their bodies show signs of distress during physical activity.
+
+**Conclusion:**
+The main difference is that the 104 healthy patients have normal "hidden" metrics, while the 392 sick patients have
+normal test results (High FastingBS and Flat ST_Slopes) that only show up through clinical data, not through how the patient feels.
+<img width="1017" height="726" alt="Screenshot 2026-04-06 at 10 44 48 PM" src="https://github.com/user-attachments/assets/4bd89bd2-e1db-4992-9004-3a7179f8d785" />
+
+
 ---
 
 ### 5️⃣ Feature Engineering 
