@@ -62,6 +62,17 @@ Workflow link: https://hub.knime.com/s/ioQksOKr8JcBcCpd
 - 💡 Key Question:
   - What differentiates the 104 healthy ASY patients from the 392 sick ones?
 
+**Analysis of the 392 Diseased vs. 104 Healthy ASY Patients:**
+
+While both groups are asymptomatic (reporting no chest pain), they are differentiated by **objective clinical markers** identified in the KNIME workflow:
+
+* **Metabolic Risk (FastingBS):** Based on the **Heatmap** node, diseased ASY patients show a higher correlation with elevated Fasting Blood Sugar (>120 mg/dl). Clinically, diabetes can cause neuropathy, which "masks" heart pain, leading to silent heart disease.
+* **Exercise Stress Indicators:** Evidence from the **Normalizer** and **Category to Number** nodes shows that the diseased group is characterized by an abnormal **ST_Slope** (Flat or Downsloping) and higher **Oldpeak** values. 
+* **Ischemic Distress:** Even without resting pain, the diseased ASY group is more likely to show **Exercise-Induced Angina**, proving their heart fails to oxygenate properly under stress.
+
+**Conclusion:** The differentiator is "Silent Ischemia"—physiological distress that only appears on EKGs or blood tests, not through patient-reported symptoms.
+
+![Heatmap Evidence - FastingBS vs HeartDisease](images/heatmap_asy.png)
 ---
 
 ### 5️⃣ Feature Engineering 
