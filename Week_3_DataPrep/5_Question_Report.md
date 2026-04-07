@@ -64,10 +64,6 @@ Workflow link: https://hub.knime.com/s/ioQksOKr8JcBcCpd
 
 **Analysis of the 392 Diseased vs. 104 Healthy ASY Patients:**
 
-**Key Question:** What differentiates the 104 healthy ASY patients from the 392 sick ones?
-
-**Analysis & KNIME Evidence:**
-
 Even though both groups are categorized as **Asymptomatic** (meaning they report no chest pain), the data shows they are clinically very different. Based on the **Heatmap** and **Normalizer** nodes in my workflow, the diseased group is differentiated by:
 
 * **Fasting Blood Sugar (FastingBS):** My **Heatmap** shows that sick ASY patients are much more likely to have a value of **1** (high blood sugar). In contrast, the 104 healthy patients almost all have a **0**. This suggests that high blood sugar is a major "hidden" risk factor for this group.
