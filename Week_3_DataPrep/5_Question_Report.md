@@ -87,5 +87,7 @@ HR\ Reserve\ Ratio = \frac{MaxHR}{220 - Age}
 ```
 - 💡 Key Question:
   - Does this engineered feature correlate more strongly with disease than raw $MaxHR$?
+ 
+  - The engineered feature HR Reserve Ratio correlates more strongly with heart disease than raw MaxHR. This makes physiological sense — the ratio accounts for age-adjusted maximum heart rate capacity, meaning it captures how close a patient is to their theoretical heart rate limit relative to their age. A patient with a low HR Reserve Ratio is closer to their maximum capacity, which is a stronger indicator of cardiovascular stress than raw MaxHR alone.
 <img width="450" height="450" alt="Screenshot 2026-04-05 at 11 13 19 PM" src="https://github.com/user-attachments/assets/b958ed50-9f8b-4cdf-979e-45e4587ecaee" />
 Workflow link: https://hub.knime.com/s/UWrFxYl5YW8yI49c
