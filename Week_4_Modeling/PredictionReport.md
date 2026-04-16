@@ -18,7 +18,8 @@ The objective of this assignment was to build an end-to-end prediction pipeline 
 An end-to-end KNIME workflow was developed to automate data processing, model training, and prediction generation.
 
 ### 📸 Figure 1 — Full KNIME Workflow Overview
-> **Insert Screenshot Here**
+<img width="360" height="172" alt="image" src="https://github.com/user-attachments/assets/4aae4e31-dfe1-4321-9eee-ec47bf3426e2" />
+
 - Show entire pipeline (zoomed out)
 ---
 
@@ -29,16 +30,18 @@ The pipeline begins with loading the cleaned dataset using the CSV Reader node. 
 Categorical variables such as `Sex`, `ChestPainType`, `RestingECG`, `ExerciseAngina`, and `ST_Slope` were transformed using One-Hot Encoding via the One to Many node.
 
 ### 📸 Figure 2 — One-Hot Encoding Configuration (One to Many Node)
-> **Insert Screenshot Here**
+
 - Show included categorical columns
 - Show excluded numeric columns
+<img width="457" height="296" alt="image" src="https://github.com/user-attachments/assets/0978e982-9924-439f-b785-0970cd1eb475" />
 
 ---
 
 Binary columns such as `FastingBS` and `HeartDisease` were converted into categorical format.
 
 ### 📸 Figure 3 — Number to String Configuration
-> **Insert Screenshot Here**
+<img width="463" height="298" alt="image" src="https://github.com/user-attachments/assets/57a6cdc1-934f-42c7-8de5-2c10cfac7f30" />
+
 - Show selected columns (`FastingBS`, `HeartDisease`)
 
 ---
@@ -46,7 +49,8 @@ Binary columns such as `FastingBS` and `HeartDisease` were converted into catego
 The dataset was split into training (70%) and testing (30%) sets using the Table Partitioner node.
 
 ### 📸 Figure 4 — Table Partitioner Configuration
-> **Insert Screenshot Here**
+<img width="461" height="301" alt="image" src="https://github.com/user-attachments/assets/f6d437c6-e95c-4f95-b05b-d86c201d9e73" />
+
 - Show 70/30 split
 - Show relative sampling selected
 
@@ -55,7 +59,8 @@ The dataset was split into training (70%) and testing (30%) sets using the Table
 Continuous variables were normalized using Z-score normalization.
 
 ### 📸 Figure 5 — Normalizer Configuration
-> **Insert Screenshot Here**
+<img width="467" height="302" alt="image" src="https://github.com/user-attachments/assets/58a1ad91-285d-420d-a9de-db820aa4d855" />
+
 - Show Z-score selected
 - Show only numeric columns included
 
@@ -64,7 +69,8 @@ Continuous variables were normalized using Z-score normalization.
 A Naive Bayes model was trained and used to generate predictions.
 
 ### 📸 Figure 6 — Naive Bayes Learner Configuration
-> **Insert Screenshot Here**
+<img width="463" height="310" alt="image" src="https://github.com/user-attachments/assets/e127a231-ea5b-473a-9f9e-bf4b9988d6cb" />
+
 - Show class column = `HeartDisease`
 
 ---
@@ -74,7 +80,8 @@ A Naive Bayes model was trained and used to generate predictions.
 Model performance was evaluated using Scorer nodes.
 
 ### 📸 Figure 7 — Overall Model Performance (Scorer Output)
-> **Insert Screenshot Here**
+<img width="469" height="299" alt="image" src="https://github.com/user-attachments/assets/e699cd0f-afd2-469c-8e83-c0d5270a8bb7" />
+
 - Confusion matrix
 - Accuracy, precision, recall visible
 
@@ -89,7 +96,8 @@ Model performance was evaluated using Scorer nodes.
 ---
 
 ### 📸 Figure 8 — Row Filter Configuration (Male vs Female)
-> **Insert Screenshot Here**
+<img width="463" height="305" alt="image" src="https://github.com/user-attachments/assets/0dcaa912-0470-4e19-8e28-a489dde2a146" />
+
 - Show:
   - `Sex = M`
   - `Sex = F`
@@ -97,7 +105,8 @@ Model performance was evaluated using Scorer nodes.
 ---
 
 ### 📸 Figure 9 — Male Model Results (Scorer Output)
-> **Insert Screenshot Here**
+<img width="475" height="291" alt="image" src="https://github.com/user-attachments/assets/56011e2b-4672-4436-999b-242d109e13f3" />
+
 - Confusion matrix for male patients
 
 ---
@@ -113,7 +122,8 @@ Model performance was evaluated using Scorer nodes.
 ---
 
 ### 📸 Figure 10 — Female Model Results (Scorer Output)
-> **Insert Screenshot Here**
+<img width="464" height="302" alt="image" src="https://github.com/user-attachments/assets/ae062856-6fea-4f27-85f3-ac85eded44e7" />
+
 - Confusion matrix for female patients
 
 ---
