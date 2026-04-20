@@ -8,7 +8,7 @@
 | Precision | 84.6% | 88.4% |
 | Recall | 73.3% | 90.2% |
 | F1-Score | 78.6% | 89.3% |
-| ROC-AUC | 0.853 | Not calculated (baseline workflow) |
+| ROC-AUC | 0.853 | 0.858 |
 
 ## Recall Gap
 
