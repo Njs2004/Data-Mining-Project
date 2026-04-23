@@ -115,3 +115,8 @@ It is important to note that both models still perform well overall, and the dif
 Replacing Naive Bayes with Random Forest (100 trees, max depth 10) improved overall model accuracy from 86.59% to 89.13% and strengthened male performance across all metrics. However, Naive Bayes performed better specifically on female recall (93.3% vs 86.7%) and female AUC (0.913 vs 0.793). The combination of SMOTE from Strategy 1 and Random Forest from Strategy 2 produced a stronger and more accurate model overall, but the results highlight an important tradeoff — optimizing for overall performance does not always mean optimizing for every subgroup equally. Future fairness work on this pipeline should consider threshold tuning as a third strategy to recover female recall while keeping the accuracy gains from Random Forest.
 
 ---
+
+## Workflow
+
+https://hub.knime.com/addisona/spaces/Public/Spring%20Project~ON5LHn89EdafgAAF/current-state 
+
