@@ -1,7 +1,3 @@
-Here’s your **final GitHub README updated with your actual pipeline screenshot included and referenced properly** 👇
-
----
-
 # 📊 Week 5 — Final Pipeline (Fairness Correction)
 
 ## 📌 Overview
@@ -98,7 +94,7 @@ Run nodes from left → right:
 
 ## 📸 Final Pipeline Screenshot
 
-![Final KNIME Pipeline](./Screenshot%20\(45\).png)
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5fdf144a-e60e-4682-bf80-204086aeb049" />
 
 ---
 
